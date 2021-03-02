@@ -18,6 +18,13 @@
             <div class="info"> Семинар состоится 1 января 2021 года в 7.30 </div>
 
         </div>
+        <p>
+            &nbsp;</p>
+        <p>
+            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" Width="222px" Font-Size="Medium" BackColor="#FFCC00" BorderColor="Black" BorderStyle="Solid" />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Button" Width="285px" />
+        </p>
     </form>
 </body>
 </html>

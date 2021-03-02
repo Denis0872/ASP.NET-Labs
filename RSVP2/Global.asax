@@ -2,5 +2,4 @@
 <script runat="server">
     protected void Application_OnEndRequest() 
     { Response.Write("<hr />Эта страница была загружена " + DateTime.Now.ToString()); }
-
 </script>

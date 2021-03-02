@@ -11,9 +11,10 @@
 }
 
 #form1 input {
-    margin: 2px;
     margin-left: 4px;
-    width: 150px;
+    margin-right: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 
 #form1 select {
