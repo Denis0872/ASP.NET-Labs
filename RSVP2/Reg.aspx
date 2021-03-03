@@ -31,11 +31,6 @@
         <div>
             <button type="submit">Отправить ответ на приглашение RSVP</button>
         </div>
-        <p>
-            &nbsp;</p>
-        <p>
-            <asp:Button ID="Button1" runat="server" Text="Кнопка" />
-        </p>
     </form>
 </body>
 </html>

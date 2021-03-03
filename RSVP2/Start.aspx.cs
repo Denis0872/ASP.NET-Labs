@@ -24,5 +24,10 @@ namespace RSVP2
         {
             Response.Redirect("Reg.aspx"); 
         }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Summary.aspx");
+        }
     }
 }

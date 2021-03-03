@@ -25,6 +25,7 @@
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Button" Width="285px" />
         </p>
+        <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="Brawlstars" Width="293px" />
     </form>
 </body>
 </html>

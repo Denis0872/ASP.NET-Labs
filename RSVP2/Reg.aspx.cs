@@ -10,6 +10,10 @@ namespace RSVP2
 {
     public partial class Reg : System.Web.UI.Page
     {
+        protected void Button4_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Summary.aspx");
+        }
         protected void Page_Load(object sender, EventArgs e)
         {
            
@@ -26,5 +30,7 @@ namespace RSVP2
                 else { Response.Redirect("sorryyoucantcome.html"); }
             }
         }
+
+        
     }
 }
