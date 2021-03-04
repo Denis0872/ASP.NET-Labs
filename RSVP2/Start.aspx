@@ -1,16 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Start.aspx.cs" Inherits="RSVP2.Start" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Start.aspx.cs" Inherits="RSVP2.Start" MasterPageFile="~/Site.master" %>
+<asp:Content ID="MainContent" ContentPlaceHolderID="ContentPlaceHolder1"  runat="server"> 
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-    <link rel="stylesheet" href="Styles.css" />
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div>
-            <div class="rek"> <h1>Приглашение на семинар</h1>
+    <div>
+     
+    
+    <div class="rek"> <h1>Приглашение на семинар</h1>
                 <p>Вы приглашены на наш семинар</p> 
                 <p>Подтвердите свое согласие, пройдя регистрацию</p> 
 
@@ -26,6 +20,10 @@
             <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Button" Width="285px" />
         </p>
         <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="Brawlstars" Width="293px" />
-    </form>
-</body>
-</html>
+
+        </asp:Content>
+
+
+
+        
+
