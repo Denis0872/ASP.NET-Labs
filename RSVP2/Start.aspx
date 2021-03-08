@@ -19,7 +19,13 @@
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Button" Width="285px" />
         </p>
-        <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="Brawlstars" Width="293px" />
+        <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="List" Width="223px" />
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+        <asp:Button ID="Button4" runat="server" OnClick="Button4_Click" Text="About" Width="286px" />
+
 
         </asp:Content>
 
