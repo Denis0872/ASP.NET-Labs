@@ -5,7 +5,12 @@
      
     
     <div class="rek"> <h1>Приглашение на семинар</h1>
-                <p>Вы приглашены на наш семинар</p> 
+                 <p>
+                    <asp:ScriptManager ID="ScriptManager1" runat="server">
+                    </asp:ScriptManager>
+                </p>
+                <p>Вы приглашены на наш семинар</p>
+        
                 <p>Подтвердите свое согласие, пройдя регистрацию</p> 
 
             </div> 
@@ -13,7 +18,20 @@
 
         </div>
         <p>
-            &nbsp;</p>
+            </p>
+    <asp:UpdatePanel ID="UpdatePanel1" runat="server" >
+        
+    </asp:UpdatePanel>
+   <asp:Timer runat="server" Interval="3000"> </asp:Timer>
+         <%
+        DateTime dataseminar = new DateTime(2022,1,1,7,30,0); 
+        DateTime dnow = DateTime.Now; 
+        int rd = (dataseminar - dnow).Days; 
+        int rm = (dataseminar - dnow).Minutes; 
+        int rsec = (dataseminar - dnow).Seconds;   
+         %> 
+      
+        <h3>До семинара осталось <%=rd.ToString()%> дн., <%=rm.ToString()%> мин. и <%=rsec.ToString()%> с.</h3>
         <p>
             <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" Width="222px" Font-Size="Medium" BackColor="#FFCC00" BorderColor="Black" BorderStyle="Solid" />
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

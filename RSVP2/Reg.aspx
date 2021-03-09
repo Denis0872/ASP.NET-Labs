@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Reg.aspx.cs" Inherits="RSVP2.Reg" MasterPageFile="~/Site.Master"  %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Reg.aspx.cs" Inherits="RSVP2.Reg" MasterPageFile="~/Site.Master" trace="true" %>
 <asp:Content ID="MainContent" ContentPlaceHolderID="ContentPlaceHolder1"  runat="server"  > 
     <div>
             <h1>Приглашаем на семинар</h1>
@@ -8,7 +8,7 @@
             <label>Ваше имя:</label>
             <asp:TextBox ID="name" runat="server"></asp:TextBox> 
     
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="name" ErrorMessage="Заполните поле имени" ForeColor="#CC0000">Не оставляйте поле пустым</asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="name" ErrorMessage="Заполните поле имени" ForeColor="#CC0000" Display="Dynamic" >Не оставляйте поле пустым</asp:RequiredFieldValidator>
     
         </div> 
         <div> 
@@ -25,6 +25,7 @@
             <label>Вы будете делать доклад?</label>
             <asp:CheckBox ID="CheckBoxYN" runat="server" />
             <asp:ValidationSummary ID="ValidationSummary1" runat="server" ShowModelStateErrors="true"/>
+          
         </div>
         <div>
             <button type="submit">Отправить ответ на приглашение RSVP</button>
