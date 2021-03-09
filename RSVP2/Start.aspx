@@ -22,7 +22,7 @@
     <asp:UpdatePanel ID="UpdatePanel1" runat="server" >
         
     </asp:UpdatePanel>
-   <asp:Timer runat="server" Interval="3000"> </asp:Timer>
+   <asp:Timer runat="server" Interval="10000"> </asp:Timer>
          <%
         DateTime dataseminar = new DateTime(2022,1,1,7,30,0); 
         DateTime dnow = DateTime.Now; 

@@ -16,6 +16,8 @@
         .auto-style3 {
             height: 150px;
         }
+        .footer
+        { font-size: 18px; text-align: left; }
     </style>
 
 </head>
@@ -36,6 +38,7 @@
 <asp:MenuItem NavigateUrl="~/About.aspx" Text="Подробности"/>
 </Items>
 </asp:Menu>
+
                     </td>
 
                      <td>  
@@ -43,7 +46,7 @@
                      </td>
                 </tr>
                 <tr>
-                    <div class="menu">
+
 
                     <td colspan="2" class="auto-style3" >
                         &nbsp;Меню
@@ -64,6 +67,9 @@
             </table>
 
         </div>
+        <div class="footer">
+    <asp:Literal ID="VisitorLiteral" runat="server" />
+</div>
     </form>
 </body>
 </html>
