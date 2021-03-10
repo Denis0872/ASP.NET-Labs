@@ -24,9 +24,12 @@
         <div> 
             <label>Вы будете делать доклад?</label>
             <asp:CheckBox ID="CheckBoxYN" runat="server" />
-            <asp:ValidationSummary ID="ValidationSummary1" runat="server" ShowModelStateErrors="true"/>
-          
+            <asp:ValidationSummary ID="ValidationSummary1" runat="server" ShowModelStateErrors="true"/> 
         </div>
+    <div> Введите название доклада: <asp:TextBox ID="TextBoxTitle" runat="server" Width="345px"></asp:TextBox> </div>
+    <div> Введите аннотацию доклада: <asp:TextBox ID="TextBoxTextAnnot" runat="server" Width="345px"></asp:TextBox> </div>
+    <div> Введите название доклада: <asp:TextBox ID="TextBoxTitle2" runat="server" Width="345px"></asp:TextBox> </div>
+    <div> Введите аннотацию доклада: <asp:TextBox ID="TextBoxTextAnnot2" runat="server" Width="345px"></asp:TextBox> </div>
         <div>
             <button type="submit">Отправить ответ на приглашение RSVP</button>
         </div>

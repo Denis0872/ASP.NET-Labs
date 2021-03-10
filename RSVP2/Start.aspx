@@ -20,15 +20,17 @@
         <p>
             </p>
     <asp:UpdatePanel ID="UpdatePanel1" runat="server" >
-        
+        <Triggers>
+               <asp:PostBackTrigger ControlID="timer1" />
+        </Triggers> 
     </asp:UpdatePanel>
-   <asp:Timer runat="server" Interval="10000"> </asp:Timer>
+   <asp:Timer ID="timer1" runat="server" Interval="10000"> </asp:Timer>
          <%
         DateTime dataseminar = new DateTime(2022,1,1,7,30,0); 
         DateTime dnow = DateTime.Now; 
         int rd = (dataseminar - dnow).Days; 
         int rm = (dataseminar - dnow).Minutes; 
-        int rsec = (dataseminar - dnow).Seconds;   
+        int rsec = (dataseminar - dnow).Seconds; 
          %> 
       
         <h3>До семинара осталось <%=rd.ToString()%> дн., <%=rm.ToString()%> мин. и <%=rsec.ToString()%> с.</h3>

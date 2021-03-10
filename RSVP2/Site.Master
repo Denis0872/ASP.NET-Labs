@@ -38,7 +38,6 @@
 <asp:MenuItem NavigateUrl="~/About.aspx" Text="Подробности"/>
 </Items>
 </asp:Menu>
-
                     </td>
 
                      <td>  
@@ -46,8 +45,6 @@
                      </td>
                 </tr>
                 <tr>
-
-
                     <td colspan="2" class="auto-style3" >
                         &nbsp;Меню
                         <asp:Menu ID="Menu1" runat="server">
@@ -61,8 +58,7 @@
                 <tr>
 
                     <td colspan="2" class="auto-style2">&nbsp;Нижний колонтитул</td>
-                    <td colspan="3" class="auto-style4">&nbsp;  <div id="temo_footer"> <ul class="footer_menu"> <li><a href="Start.aspx">Главная</a></li> <li><a href="Reg.aspx">Регистрация</a></li> <li><a href="Summary.aspx">Отчет о регистрации</a></li> <li><a href="About.aspx">Подробности</a></li> </ul> </div> </td>
-                
+                    <td colspan="3" class="auto-style4">&nbsp;  <div id="temo_footer"> <ul class="footer_menu"> <li><a href="Start.aspx">Главная</a></li> <li><a href="Reg.aspx">Регистрация</a></li> <li><a href="Summary.aspx">Отчет о регистрации</a></li> <li><a href="About.aspx">Подробности</a></li> </ul> </div> </td>              
                 </tr>
             </table>
 
