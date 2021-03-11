@@ -36,6 +36,7 @@
 <asp:MenuItem NavigateUrl="~/Reg.aspx" Text="Регистрация"/>
 <asp:MenuItem NavigateUrl="~/Summary.aspx" Text="Отчет о регистрации"/>
 <asp:MenuItem NavigateUrl="~/About.aspx" Text="Подробности"/>
+<asp:MenuItem NavigateUrl="~/SummaryBD.aspx" Text="Список участников"/>
 </Items>
 </asp:Menu>
                     </td>
@@ -58,7 +59,14 @@
                 <tr>
 
                     <td colspan="2" class="auto-style2">&nbsp;Нижний колонтитул</td>
-                    <td colspan="3" class="auto-style4">&nbsp;  <div id="temo_footer"> <ul class="footer_menu"> <li><a href="Start.aspx">Главная</a></li> <li><a href="Reg.aspx">Регистрация</a></li> <li><a href="Summary.aspx">Отчет о регистрации</a></li> <li><a href="About.aspx">Подробности</a></li> </ul> </div> </td>              
+                    <td colspan="3" class="auto-style4">&nbsp;  <div id="temo_footer"> 
+                        <ul class="footer_menu"> 
+                            <li><a href="Start.aspx">Главная</a></li> 
+                            <li><a href="Reg.aspx">Регистрация</a></li> 
+                            <li><a href="Summary.aspx">Отчет о регистрации</a></li> 
+                            <li><a href="About.aspx">Подробности</a></li>
+                            <li><a href="SummaryBD.aspx">Список участников</a></li>
+                            </ul> </div> </td>              
                 </tr>
             </table>
 

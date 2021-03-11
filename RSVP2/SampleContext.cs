@@ -1,5 +1,6 @@
 ﻿using System.Data.Entity;
 using RSVP2.Models;
+using System.Linq;
 
 
 namespace RSVP2
