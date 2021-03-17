@@ -77,3 +77,7 @@ C:\Users\Пользователь\source\repos\ASP.NET\Labs\MvcCreditApp1\MvcCre
 C:\Users\Пользователь\source\repos\ASP.NET\Labs\MvcCreditApp1\MvcCreditApp1\obj\Debug\MvcCreditApp1.csproj.CopyComplete
 C:\Users\Пользователь\source\repos\ASP.NET\Labs\MvcCreditApp1\MvcCreditApp1\obj\Debug\MvcCreditApp1.dll
 C:\Users\Пользователь\source\repos\ASP.NET\Labs\MvcCreditApp1\MvcCreditApp1\obj\Debug\MvcCreditApp1.pdb
+C:\Users\Пользователь\source\repos\ASP.NET\Labs\MvcCreditApp1\MvcCreditApp1\bin\EntityFramework.dll
+C:\Users\Пользователь\source\repos\ASP.NET\Labs\MvcCreditApp1\MvcCreditApp1\bin\EntityFramework.SqlServer.dll
+C:\Users\Пользователь\source\repos\ASP.NET\Labs\MvcCreditApp1\MvcCreditApp1\bin\EntityFramework.xml
+C:\Users\Пользователь\source\repos\ASP.NET\Labs\MvcCreditApp1\MvcCreditApp1\bin\EntityFramework.SqlServer.xml
