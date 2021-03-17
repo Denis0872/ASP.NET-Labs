@@ -17,9 +17,9 @@ namespace MvcDataViews.Controllers
         }
 
         // GET: Person/Details/5
-        public ActionResult Details(int id)
+        public ActionResult Details(Person p)
         {
-            return View();
+            return View(p);
         }
 
         // GET: Person/Create
@@ -30,12 +30,15 @@ namespace MvcDataViews.Controllers
 
         // POST: Person/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(Person p)
         {
             try
             {
-                // TODO: Add insert logic here
-
+                if (!ModelState.IsValid)
+                {
+                    return View("Create", p);
+                }
+                people.Add(p);
                 return RedirectToAction("Index");
             }
             catch
@@ -47,44 +50,82 @@ namespace MvcDataViews.Controllers
         // GET: Person/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            Person p = new Person();
+            foreach (Person pn in people)
+
+            {
+                if (pn.Id == id)
+                {
+                    p.Name = pn.Name;
+                    p.Age = pn.Age;
+                    p.Id = pn.Id;
+                    p.Phone = pn.Phone;
+                    p.Email = pn.Email;
+                }
+            }
+            return View(p);
         }
 
         // POST: Person/Edit/5
         [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
+        public ActionResult Edit(Person p)
         {
-            try
+            if (!ModelState.IsValid)
             {
-                // TODO: Add update logic here
-
-                return RedirectToAction("Index");
+                return View("Edit", p);
             }
-            catch
+            foreach (Person pn in people)
             {
-                return View();
+                if (pn.Id == p.Id)
+                {
+                    pn.Name = p.Name;
+                    pn.Age = p.Age;
+                    pn.Id = p.Id;
+                    pn.Phone = p.Phone;
+                    pn.Email = p.Email;
+                }
             }
+             return RedirectToAction("Index");
         }
 
         // GET: Person/Delete/5
         public ActionResult Delete(int id)
         {
+            Person p = new Person();
+            foreach (Person pn in people)
+            {
+                if (pn.Id == id)
+                {
+                    p.Name = pn.Name;
+                    p.Age = pn.Age;
+
+                p.Id = pn.Id;
+                    p.Phone = pn.Phone;
+                    p.Email = pn.Email;
+                }
+            }
             return View();
         }
 
         // POST: Person/Delete/5
         [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
+        public ActionResult Delete(Person p)
         {
             try
             {
                 // TODO: Add delete logic here
-
+                foreach (Person pn in people)
+                {
+                    if (pn.Id == p.Id)
+                    {
+                        people.Remove(pn);
+                    }
+                }
                 return RedirectToAction("Index");
             }
             catch
             {
-                return View();
+                return View(p);
             }
         }
     }
