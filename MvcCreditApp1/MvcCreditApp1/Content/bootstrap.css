@@ -56,6 +56,13 @@ abbr[title] {
   -moz-text-decoration: underline dotted;
   text-decoration: underline dotted;
 }
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 6px solid silver;
+    vertical-align: middle;
+    text-align: center;
+}
 b,
 strong {
   font-weight: bold;
