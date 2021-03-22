@@ -24,7 +24,8 @@
                     <li>@Html.ActionLink("Основная", "Index", "Home")</li>
                     <li>@Html.ActionLink("Редактирование", "Index", "Edit")</li>
                     <li>@Html.ActionLink("Калькуляция", "Index", "Sum")</li>
-
+                    <li>@Html.ActionLink("Ранжирование", "Ranking", "Sum")</li>
+                    <li>@Html.ActionLink("Сохранить файл", "CreateFile", "Sum")</li>
                 </ul>
             </div>
         </div>
@@ -33,6 +34,7 @@
         @RenderBody()
         <hr />
         <footer>
+          
             <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
         </footer>
     </div>

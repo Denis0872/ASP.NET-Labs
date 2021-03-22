@@ -22,7 +22,6 @@ namespace Control_TASK_ASP_MVC.Controllers
             GetStudents();
             var allStd = db.Students.ToList<Student>();
             ViewBag.SSS = allStd;
-
             return View();
         }
         [HttpPost]
@@ -33,7 +32,6 @@ namespace Control_TASK_ASP_MVC.Controllers
             db.SaveChanges(); 
             return "<b>" + newSTD.FirstName + "</b>, данные введены";
          }
-
 
             private void GetStudents()
         {
